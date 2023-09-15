@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Roboto:wght@900&display=swap");
+
+.my-name-one p {
+  font-family: "Orbitron", sans-serif;
+  display: inline-block;
+  width: 100vw;
+}
+
+.typed {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing;
+  animation-duration: 1.5s;
+  animation-timing-function: steps(15, end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width:58rem }
+}
+
+@keyframes typingSmallerScreen {
+  from { width: 0 }
+  to { width:12rem }
+}
+
+@media (max-width:1018px) {
+  .my-name-one p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:1018px) {
+  .typed {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingSmallerScreen;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(15, end);
+    animation-fill-mode: forwards;
+  }
+}
