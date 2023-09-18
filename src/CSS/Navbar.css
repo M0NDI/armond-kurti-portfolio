@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Roboto:wght@900&display=swap");
+
+.nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    writing-mode: vertical-lr;
+    color: white;
+    outline: 2px solid white;
+    height: 10rem;
+    width: 5rem;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    transition-duration: 1s ease;
+}
+
+.about-me-link {
+    left: 2rem;
+    top: 12rem;
+}
+
+.projects-link {
+    left: 2rem;
+    top: 24rem;
+}
+
+.contact-link {
+    left: 2rem;
+    top: 36rem;
+}
+
+@media (max-width:1280px) {
+    .nav-link {
+        position:initial;
+        width: 12rem;
+        height: 5rem;
+        writing-mode:initial;
+    }
+}
+
+@media (max-width:540px) {
+    .nav-link {
+        position:initial;
+        width: 7rem;
+        height: 5rem;
+        writing-mode:initial;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:359px) {
+    .nav-link {
+        position:initial;
+        width: 4rem;
+        height: 5rem;
+        writing-mode:initial;
+        font-size: 15px;
+    }
+}

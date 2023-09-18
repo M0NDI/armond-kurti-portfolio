@@ -1,12 +1,11 @@
 import "../CSS/AboutMe.css";
-import spaceBg from "../../public/assets/images/space.jpg";
 
 const AboutMe = () => {
   return (
-    <div id="about-me-container" className="text-2xl outline bg-zinc-900">
-      <img src={spaceBg} className="object-cover w-screen h-screen absolute"/>
-      <div className="my-name-one outline flex justify-center items-center h-screen">
-        <p className="typed text-8xl text-zinc-200 tracking-widest z-50">Hi, I'm Armond.</p>
+    <div id="about-me-main-container" className="text-2xl">
+      <div className="my-name-one flex justify-center items-center flex-col h-screen">
+        <h1 className="typed text-8xl text-zinc-200 tracking-widest">Hi, I'm Armond.</h1>
+        <p className="more-about-me text-zinc-100 m-12">MORE ABOUT ME</p>
       </div>
     </div>
   );
