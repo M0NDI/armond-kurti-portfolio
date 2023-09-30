@@ -9,15 +9,17 @@ body {
 
 .my-name-one h1 {
   font-family: 'Roboto', sans-serif;
-  display: inline-block;
-  width: 100vw;
 }
 
 .typed {
+  display: flex;
+  align-items: center;
   width: 0;
+  height: 7rem;
+  font-size: 90px;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing;
+  animation: typingDesktop;
   animation-duration: 1.5s;
   animation-timing-function: steps(15, end);
   animation-fill-mode: forwards;
@@ -27,20 +29,109 @@ body {
   top: 40rem;
 }
 
+.more-about-me img {
+  height: 3rem;
+  transition: height 0.2s ease-in-out;
+}
+
+.more-about-me img:hover {
+  height: 4rem;
+}
+
+/* 
+  SVG Fills
+*/
+.default-color {
+  stroke: blue; /* default color */
+}
+
+.highlight {
+  stroke: red;
+}
+
+.custom-color {
+  stroke: green;
+}
+
+/* <----- MEDIA QUERIES -----> */
+
+@media (max-width:1018px) {
+  .typed {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing;
+    font-size: 88px;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(15, end);
+    animation-fill-mode: forwards;
+  }
+  .my-name-one p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:540px) {
+  .typed {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingMediumScreen;
+    font-size: 42px;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(15, end);
+    animation-fill-mode: forwards;
+  }
+}
+
+@media (max-width:360px) {
+  .typed {
+    width: 0;
+    height: 4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingMediumScreen;
+    font-size: 41px;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(15, end);
+    animation-fill-mode: forwards;
+  }
+}
+
+@media (max-width:280px) {
+  .typed {
+    width: 0;
+    height: 4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingSmallerScreen;
+    font-size: 30.5px;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(15, end);
+    animation-fill-mode: forwards;
+  }
+}
+
+/* <----- ANIMATIONS -----> */
+
+@keyframes typingDesktop {
+  from { width: 0 }
+  to { width:47rem }
+}
+
 @keyframes typing {
   from { width: 0 }
-  to { width:58rem }
+  to { width:47rem }
+}
+
+@keyframes typingMediumScreen {
+  from { width: 0 }
+  to { width:22rem }
 }
 
 @keyframes typingSmallerScreen {
   from { width: 0 }
-  to { width:12rem }
-}
-
-@media (max-width:1018px) {
-  .my-name-one p {
-    font-size: 20px;
-  }
+  to { width:16rem }
 }
 
 @keyframes gradient {
@@ -53,16 +144,4 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
-}
-
-@media (max-width:1018px) {
-  .typed {
-    width: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typingSmallerScreen;
-    animation-duration: 1.5s;
-    animation-timing-function: steps(15, end);
-    animation-fill-mode: forwards;
-  }
 }

@@ -1,14 +1,14 @@
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
+import Projects from "./Pages/Projects";
+import AboutMe from "./Pages/AboutMe";
+import Contact from "./Pages/Contact";
 import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
 function App() {
   return (
-    <div id="app-wrapper">
+    <div id="app-wrapper" className="app">
       <Navbar />
       <Routes>
         <Route

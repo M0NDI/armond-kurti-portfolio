@@ -33,7 +33,7 @@ const Navbar = () => {
   };
 
   return (
-    <div id="navbar-container" className="flex flex-col h-14 w-32 h-full fixed z-50">
+    <div id="navbar" className="navbar-container flex flex-col justify-center h-screen w-24 items-start fixed z-50 ml-8">
       <ul className="nav-links-container flex flex-col justify-evenly items-center h-full bg-transparent">
         <li className="nav-link about-me-link" onClick={scrollToAboutMe}>
           <NavLink>About</NavLink>
