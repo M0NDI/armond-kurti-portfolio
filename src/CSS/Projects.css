@@ -1,4 +1,23 @@
-.project-thumbnail {
-    height: 20rem;
-    width: auto;
+.projects-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.project {
+    width: 40%;
+    margin: 1rem;
+}
+
+.tool-used {
+    height: 3.5rem;
+}
+
+.tool-used img {
+    height: 3rem;
+}
+
+.tool-axios {
+    width: 10rem;
 }

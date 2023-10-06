@@ -12,14 +12,10 @@ body {
 }
 
 .typed {
-  display: flex;
-  align-items: center;
-  width: 0;
-  height: 7rem;
+  height: 5rem;
   font-size: 90px;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typingDesktop;
+  border-right: 1rem solid #E4E4E7;
+  animation: typingDesktop, blink-caret 5s step-start infinite;
   animation-duration: 1.5s;
   animation-timing-function: steps(15, end);
   animation-fill-mode: forwards;
@@ -29,28 +25,26 @@ body {
   top: 40rem;
 }
 
+.my-name-one p {
+  font-size: 16px;
+}
+
 .more-about-me img {
-  height: 3rem;
+  height: 2rem;
   transition: height 0.2s ease-in-out;
 }
 
 .more-about-me img:hover {
-  height: 4rem;
+  height: 3rem;
 }
 
-/* 
-  SVG Fills
-*/
-.default-color {
-  stroke: blue; /* default color */
+.delayed-message {
+  opacity: 0;
+  transition: opacity 1s ease; /* Adjust the transition duration and timing function as needed */
 }
 
-.highlight {
-  stroke: red;
-}
-
-.custom-color {
-  stroke: green;
+.delayed-message.visible {
+  opacity: 1;
 }
 
 /* <----- MEDIA QUERIES -----> */
@@ -60,14 +54,14 @@ body {
     width: 0;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing;
+    animation: typing, blink-caret .5s step-end infinite;
     font-size: 88px;
     animation-duration: 1.5s;
     animation-timing-function: steps(15, end);
     animation-fill-mode: forwards;
   }
   .my-name-one p {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -76,22 +70,22 @@ body {
     width: 0;
     overflow: hidden;
     white-space: nowrap;
-    animation: typingMediumScreen;
-    font-size: 42px;
+    animation: typingMediumScreen, blink-caret .5s step-end infinite;
+    font-size: 40px;
     animation-duration: 1.5s;
     animation-timing-function: steps(15, end);
     animation-fill-mode: forwards;
   }
 }
 
-@media (max-width:360px) {
+@media (max-width:375px) {
   .typed {
     width: 0;
     height: 4rem;
     overflow: hidden;
     white-space: nowrap;
-    animation: typingMediumScreen;
-    font-size: 41px;
+    animation: typingSmallScreen, blink-caret .5s step-end infinite;
+    font-size: 35px;
     animation-duration: 1.5s;
     animation-timing-function: steps(15, end);
     animation-fill-mode: forwards;
@@ -104,8 +98,8 @@ body {
     height: 4rem;
     overflow: hidden;
     white-space: nowrap;
-    animation: typingSmallerScreen;
-    font-size: 30.5px;
+    animation: typingSmallerScreen, blink-caret .5s step-end infinite;
+    font-size: 29px;
     animation-duration: 1.5s;
     animation-timing-function: steps(15, end);
     animation-fill-mode: forwards;
@@ -116,7 +110,7 @@ body {
 
 @keyframes typingDesktop {
   from { width: 0 }
-  to { width:47rem }
+  to { width:48.5rem }
 }
 
 @keyframes typing {
@@ -129,9 +123,14 @@ body {
   to { width:22rem }
 }
 
+@keyframes typingSmallScreen {
+  from { width: 0 }
+  to { width:19.5rem }
+}
+
 @keyframes typingSmallerScreen {
   from { width: 0 }
-  to { width:16rem }
+  to { width:16.5rem }
 }
 
 @keyframes gradient {
@@ -144,4 +143,9 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #E4E4E7 }
 }

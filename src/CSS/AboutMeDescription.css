@@ -1,0 +1,20 @@
+@media (max-width:1024px) {
+    .about-me-desc {
+        font-size: 30px;
+        width: 45rem;
+    }
+}
+
+@media (max-width:375px) {
+    .about-me-desc {
+        font-size: 13.5px;
+        width: 17rem;
+    }
+}
+
+@media (max-width:280px) {
+    .about-me-desc {
+        font-size: 13.5px;
+        width: 15rem;
+    }
+}

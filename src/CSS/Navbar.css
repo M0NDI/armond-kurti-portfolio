@@ -1,80 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap");
 
-.nav-link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    writing-mode: vertical-lr;
-    color: white;
-    outline: 2px solid white;
-    height: 10rem;
-    width: 5rem;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    border-radius: 1rem;
+.navbar-container {
+  font-family: "Raleway", sans-serif;
 }
 
-.nav-link:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    transition-duration: 1s ease;
-}
+.nav-links-container li a {
+  --s: 0.1em; /* the thickness of the line */
+  --c: rgba(0, 0, 128, 0.644); /* the color */
 
-.about-me-link {
-    left: 2rem;
-    top: 12rem;
+  color: #0000;
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, white 0) calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
 }
-
-.projects-link {
-    left: 2rem;
-    top: 24rem;
-}
-
-.contact-link {
-    left: 2rem;
-    top: 36rem;
-}
-
-@media (max-width:1073px) {
-    .nav-links-container {
-        display: flex !important;
-        flex-direction: row !important;
-        align-items: flex-end !important;
-        outline: 2px solid white;
-        width: 100vw !important;
-        outline: 12px solid red;
-        padding-bottom: 2rem;
-    }
-    .nav-link {
-        position:initial;
-        width: 8rem;
-        height: 4rem;
-        writing-mode:initial;
-    }
-    .navbar-container {
-        outline: 2px solid white;
-        width: 100vw !important;
-        margin: 0 !important;
-    }
-}
-
-@media (max-width:540px) {
-    .nav-link {
-        position:initial;
-        width: 6rem;
-        height: 4rem;
-        writing-mode:initial;
-        font-size: 20px;
-    }
-}
-
-@media (max-width:280px) {
-    .nav-link {
-        position:initial;
-        width: 5rem !important;
-        height: 4rem;
-        writing-mode:initial;
-        font-size: 18px;
-    }
+.nav-links-container li a:hover {
+  --_p: 100%;
 }
