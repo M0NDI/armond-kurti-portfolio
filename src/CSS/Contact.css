@@ -1,0 +1,15 @@
+.contact-item {
+    width: 40rem;
+}
+
+@media (max-width:375px) {
+    .contact-item p {
+        font-size: 15px;
+    }
+    .contact-item {
+        width: 20rem;
+    }
+    .contact-item img {
+        height: 4rem;
+    }
+}

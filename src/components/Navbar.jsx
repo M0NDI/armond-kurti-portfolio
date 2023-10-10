@@ -36,13 +36,13 @@ const Navbar = () => {
     <div id="navbar" className="navbar-container fixed w-full">
       <ul className="nav-links-container flex justify-evenly w-full p-4 text-2xl">
         <li className="nav-link about-me-link" onClick={scrollToAboutMe}>
-          <NavLink>About</NavLink>
+          <NavLink to="/">About</NavLink>
         </li>
         <li className="nav-link projects-link" onClick={scrollToProjects}>
-          <NavLink >Projects</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
         </li>
         <li className="nav-link contact-link" onClick={scrollToContactMe}>
-          <NavLink >Contact</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
     </div>

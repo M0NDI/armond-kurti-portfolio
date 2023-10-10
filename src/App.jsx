@@ -13,13 +13,15 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={
-            <div>
-              <AboutMe />
-              <Projects />
-              <Contact />
-            </div>
-          }
+          element={<AboutMe />}
+        ></Route>
+        <Route
+          path="/projects"
+          element={<Projects />}
+        ></Route>
+        <Route
+          path="/contact"
+          element={<Contact />}
         ></Route>
       </Routes>
     </div>

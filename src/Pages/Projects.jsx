@@ -16,77 +16,83 @@ import axiosLogo from "../../public/assets/images/logos/axios-logo.svg";
 const Projects = () => {
   return (
     <div id="projects-main-container" className="text-2xl">
-      <div className="projects-inner text-zinc-100">
+      <div className="projects-inner flex flex-col text-zinc-100">
         {/*  */}
 
-        <div className="project text-center">
-          <div className="mb-8 outline w-full">Mondi Movie App</div>
+        <div className="project movie-app text-center flex flex-col w-11/12 mt-14">
+          <div className="mb-8 outline w-full text-2xl p-2 font-bold">Mondi Movie App</div>
           <div className="project-tools-used w-full flex justify-evenly">
             <div className="tool-used tool-javascript ">
-              <img src={javascriptLogo}/>
+              <img src={javascriptLogo} />
             </div>
             <div className="tool-used tool-react">
-              <img src={reactLogo}/>
+              <img src={reactLogo} />
             </div>
             <div className="tool-used tool-html">
-              <img src={htmlLogo}/>
+              <img src={htmlLogo} />
             </div>
             <div className="tool-used tool-css">
-              <img src={cssLogo}/>
+              <img src={cssLogo} />
             </div>
             <div className="tool-used tool-react-router">
-              <img src={reactRouterLogo}/>
+              <img src={reactRouterLogo} />
             </div>
             <div className="tool-used tool-axios">
-              <img src={axiosLogo}/>
+              <img src={axiosLogo} />
             </div>
           </div>
           <img className="project-thumbnail" src={movieAppPreview} />
           <div className="project-links flex justify-evenly  p-4 w-full">
-            <Link to={"https://github.com/M0NDI/mondi-movie-app"} className="flex flex-col w-28">
-              <img src={githubLogo} className="h-16 bg-transparent rounded-2xl p-2" />
+            <Link
+              to={"https://github.com/M0NDI/mondi-movie-app"}
+              className="flex flex-col w-20 hover:outline hover:rounded"
+            >
+              <img src={githubLogo} className="bg-transparent rounded-2xl p-2" />
             </Link>
-            <Link to={"https://m0ndi.github.io/mondi-movie-app/"} className="flex flex-col w-28">
-              <img src={liveDemoArrow} className="h-16 bg-transparent rounded-2xl p-2" />
+            <Link
+              to={"https://m0ndi.github.io/mondi-movie-app/"}
+              className="flex flex-col w-20 hover:outline rounded"
+            >
+              <img src={liveDemoArrow} className="h-12 bg-transparent rounded-2xl p-2" />
             </Link>
           </div>
         </div>
 
-        <div className="project text-center">
-        <div className="mb-8 outline w-full">Felix Roasting Company Clone</div>
+        <div className="project felix-clone text-center flex flex-col w-11/12 mb-14 mt-12">
+          <div className="mb-8 outline w-full text-2xl p-2 font-bold">Felix Roasting Company Clone</div>
           <div className="project-tools-used w-full flex justify-evenly">
             <div className="tool-used tool-javascript ">
-              <img src={javascriptLogo}/>
+              <img src={javascriptLogo} />
             </div>
             <div className="tool-used tool-react">
-              <img src={reactLogo}/>
+              <img src={reactLogo} />
             </div>
             <div className="tool-used tool-html">
-              <img src={htmlLogo}/>
+              <img src={htmlLogo} />
             </div>
             <div className="tool-used tool-css">
-              <img src={cssLogo}/>
+              <img src={cssLogo} />
             </div>
             <div className="tool-used tool-tailwindcss">
-              <img src={tailwindcssLogo}/>
+              <img src={tailwindcssLogo} />
             </div>
             <div className="tool-used tool-react-router">
-              <img src={reactRouterLogo}/>
+              <img src={reactRouterLogo} />
             </div>
           </div>
           <img className="project-thumbnail" src={felixapppreview} />
           <div className="project-links flex justify-evenly p-4 w-full">
             <Link
               to={"https://github.com/M0NDI/felix-roasting-company-clone"}
-              className="flex flex-col w-28"
+              className="flex flex-col w-20 hover:outline rounded"
             >
-              <img src={githubLogo} className="h-16 bg-transparent rounded-2xl p-2" />
+              <img src={githubLogo} className="bg-transparent rounded-2xl p-2" />
             </Link>
             <Link
               to={"https://m0ndi.github.io/felix-roasting-company-clone/"}
-              className="flex flex-col w-28"
+              className="flex flex-col w-20 hover:outline rounded"
             >
-              <img src={liveDemoArrow} className="h-16 bg-transparent rounded-2xl p-2" />
+              <img src={liveDemoArrow} className="h-12 bg-transparent rounded-2xl p-2" />
             </Link>
           </div>
         </div>

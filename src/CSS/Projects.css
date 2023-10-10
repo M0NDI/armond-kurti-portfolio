@@ -2,12 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding-top: 5rem;
 }
 
-.project {
-    width: 40%;
-    margin: 1rem;
+.project-tools-used {
+    height: 4rem;
 }
 
 .tool-used {
@@ -15,7 +14,7 @@
 }
 
 .tool-used img {
-    height: 3rem;
+    height: 2rem;
 }
 
 .tool-axios {
