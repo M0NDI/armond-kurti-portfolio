@@ -2,9 +2,22 @@
     width: 40rem;
 }
 
-@media (max-width:375px) {
+@media (max-width:414px) {
     .contact-item p {
         font-size: 15px;
+    }
+    .contact-item {
+        width: 20rem;
+    }
+    .contact-item img {
+        height: 4rem;
+    }
+}
+
+@media (max-width:280px) {
+    .contact-item p {
+        font-size: 12px;
+        padding-right: 1rem;
     }
     .contact-item {
         width: 20rem;
