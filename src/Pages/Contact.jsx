@@ -26,7 +26,7 @@ const Contact = () => {
           <div className="flex justify-between w-full">
             <img src={githubLogo} className="h-16" />
             <p className="flex items-center text-zinc-200 text-4xl">
-              <Link mailto="https://github.com/M0NDI">https://github.com/M0NDI</Link>
+              <Link to="https://github.com/M0NDI">https://github.com/M0NDI</Link>
             </p>
           </div>
         </div>
