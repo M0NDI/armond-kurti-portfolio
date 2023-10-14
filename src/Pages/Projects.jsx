@@ -21,10 +21,11 @@ const Projects = () => {
 
         <div id="carouselExample" className="carousel slide w-11/12 h-11/12 mt-12">
           <div className="carousel-inner">
-
             <div className="carousel-item active">
               <div className="project movie-app text-center flex flex-col items-center justify-center w-full">
-                <div className="project-title mb-8 outline w-7/12 p-2 font-bold mt-4">Mondi Movie App</div>
+                <div className="project-title mb-8 outline w-9/12 p-2 font-bold mt-4">
+                  Mondi Movie App
+                </div>
                 <div className="project-tools-used w-7/12 flex justify-evenly">
                   <div className="tool-used tool-javascript ">
                     <img src={javascriptLogo} />
@@ -45,7 +46,7 @@ const Projects = () => {
                     <img src={axiosLogo} />
                   </div>
                 </div>
-                <img className="project-thumbnail w-7/12" src={movieAppPreview} />
+                <img className="project-thumbnail w-9/12" src={movieAppPreview} />
                 <div className="project-links flex justify-evenly p-4 w-full">
                   <Link
                     to={"https://github.com/M0NDI/mondi-movie-app"}
@@ -65,7 +66,9 @@ const Projects = () => {
 
             <div className="carousel-item">
               <div className="project movie-app text-center flex flex-col items-center justify-center w-full">
-                <div className="project-title mb-8 outline w-7/12 p-2 font-bold mt-4">Felix Roasting Company Clone</div>
+                <div className="project-title mb-8 outline w-9/12 p-2 font-bold mt-4">
+                  Felix Roasting Company Clone
+                </div>
                 <div className="project-tools-used w-7/12 flex justify-evenly">
                   <div className="tool-used tool-javascript ">
                     <img src={javascriptLogo} />
@@ -79,14 +82,14 @@ const Projects = () => {
                   <div className="tool-used tool-css">
                     <img src={cssLogo} />
                   </div>
+                  <div className="tool-used tool-tailwindcss">
+                    <img src={tailwindcssLogo} />
+                  </div>
                   <div className="tool-used tool-react-router">
                     <img src={reactRouterLogo} />
                   </div>
-                  <div className="tool-used tool-axios">
-                    <img src={axiosLogo} />
-                  </div>
                 </div>
-                <img className="project-thumbnail w-7/12" src={felixapppreview} />
+                <img className="project-thumbnail w-9/12" src={felixapppreview} />
                 <div className="project-links flex justify-evenly p-4 w-full">
                   <Link
                     to={"https://github.com/M0NDI/felix-roasting-company-clone"}
@@ -103,10 +106,9 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-
           </div>
           <button
-            className="carousel-control-prev"
+            className="carousel-control-prev mr-8"
             type="button"
             data-bs-target="#carouselExample"
             data-bs-slide="prev"

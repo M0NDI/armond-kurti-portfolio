@@ -21,10 +21,6 @@ body {
   animation-fill-mode: forwards;
 }
 
-.more-about-me {
-  top: 40rem;
-}
-
 .my-name-one p {
   font-size: 16px;
 }
@@ -49,7 +45,10 @@ body {
 
 /* <----- MEDIA QUERIES -----> */
 
-@media (max-width:1018px) {
+@media (max-width:1024px) {
+  #about-me-main-wrapper {
+    padding-top: 28rem !important;
+  }
   .typed {
     width: 0;
     overflow: hidden;

@@ -18,16 +18,24 @@
 }
 
 .tool-axios {
-    width: 10rem;
+    
 }
 
 @media (max-width:375px) {
     .tool-used img {
-        width: 4rem;
-        /* outline: 2px solid white; */
+        width: 3rem;
+        height: auto;
+    }
+    .tool-used {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .project-title {
-        width: 15rem !important;
-        font-size: 20px !important;
+        width: 10rem !important;
+        font-size: 15px !important;
+    }
+    .project-thumbnail {
+        width: 10rem !important;
     }
 }

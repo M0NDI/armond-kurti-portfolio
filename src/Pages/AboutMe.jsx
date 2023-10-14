@@ -21,13 +21,13 @@ const AboutMe = () => {
         >
           Hi, I'm Armond.
         </h1>
-        <div className="more-about-me flex justify-center items-center flex-col text-zinc-100 m-6 cursor-pointer w-8/12">
-          <p onClick={handleAboutMeClicked} className="z-50 text-3xl leading-loose">
+        <div className="more-about-me flex justify-center items-center flex-col text-zinc-100 m-6 cursor-pointer">
+          <p onClick={handleAboutMeClicked} className="text-3xl leading-loose">
             {isAboutMeClicked ? <AboutMeDescription /> : "MORE ABOUT ME"}
           </p>
           <img
             src={!isAboutMeClicked ? downArrow : upArrow}
-            className="about-me-arrows relative top-100 z-50"
+            className="about-me-arrows relative mt-4 z-50"
             alt="Arrow"
             onClick={handleAboutMeClicked}
           />
