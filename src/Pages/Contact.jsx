@@ -12,7 +12,6 @@ const Contact = () => {
       className="text-2xl h-screen h-screen w-screen flex items-center justify-center"
     >
       <div className="contact-items flex flex-col justify-center items-center w-8/12">
-
         <div className="contact-email contact-item flex justify-evenly">
           <div className="flex justify-between w-full">
             <img src={emailLogo} className="w-16 ml-6" />
@@ -37,7 +36,6 @@ const Contact = () => {
             <p className="flex items-center text-zinc-200 text-4xl">+44 7916712239</p>
           </div>
         </div>
-
       </div>
     </div>
   );

@@ -19,82 +19,110 @@ const Projects = () => {
       <div className="projects-inner flex flex-col text-zinc-100">
         {/*  */}
 
-        <div className="project movie-app text-center flex flex-col w-11/12 mt-14">
-          <div className="mb-8 outline w-full text-2xl p-2 font-bold">Mondi Movie App</div>
-          <div className="project-tools-used w-full flex justify-evenly">
-            <div className="tool-used tool-javascript ">
-              <img src={javascriptLogo} />
-            </div>
-            <div className="tool-used tool-react">
-              <img src={reactLogo} />
-            </div>
-            <div className="tool-used tool-html">
-              <img src={htmlLogo} />
-            </div>
-            <div className="tool-used tool-css">
-              <img src={cssLogo} />
-            </div>
-            <div className="tool-used tool-react-router">
-              <img src={reactRouterLogo} />
-            </div>
-            <div className="tool-used tool-axios">
-              <img src={axiosLogo} />
-            </div>
-          </div>
-          <img className="project-thumbnail" src={movieAppPreview} />
-          <div className="project-links flex justify-evenly  p-4 w-full">
-            <Link
-              to={"https://github.com/M0NDI/mondi-movie-app"}
-              className="flex flex-col w-20 hover:outline hover:rounded"
-            >
-              <img src={githubLogo} className="bg-transparent rounded-2xl p-2" />
-            </Link>
-            <Link
-              to={"https://m0ndi.github.io/mondi-movie-app/"}
-              className="flex flex-col w-20 hover:outline rounded"
-            >
-              <img src={liveDemoArrow} className="h-12 bg-transparent rounded-2xl p-2" />
-            </Link>
-          </div>
-        </div>
+        <div id="carouselExample" className="carousel slide w-11/12 h-11/12 mt-12">
+          <div className="carousel-inner">
 
-        <div className="project felix-clone text-center flex flex-col w-11/12 mb-14 mt-12">
-          <div className="mb-8 outline w-full text-2xl p-2 font-bold">Felix Roasting Company Clone</div>
-          <div className="project-tools-used w-full flex justify-evenly">
-            <div className="tool-used tool-javascript ">
-              <img src={javascriptLogo} />
+            <div className="carousel-item active">
+              <div className="project movie-app text-center flex flex-col items-center justify-center w-full">
+                <div className="project-title mb-8 outline w-7/12 p-2 font-bold mt-4">Mondi Movie App</div>
+                <div className="project-tools-used w-7/12 flex justify-evenly">
+                  <div className="tool-used tool-javascript ">
+                    <img src={javascriptLogo} />
+                  </div>
+                  <div className="tool-used tool-react">
+                    <img src={reactLogo} />
+                  </div>
+                  <div className="tool-used tool-html">
+                    <img src={htmlLogo} />
+                  </div>
+                  <div className="tool-used tool-css">
+                    <img src={cssLogo} />
+                  </div>
+                  <div className="tool-used tool-react-router">
+                    <img src={reactRouterLogo} />
+                  </div>
+                  <div className="tool-used tool-axios">
+                    <img src={axiosLogo} />
+                  </div>
+                </div>
+                <img className="project-thumbnail w-7/12" src={movieAppPreview} />
+                <div className="project-links flex justify-evenly p-4 w-full">
+                  <Link
+                    to={"https://github.com/M0NDI/mondi-movie-app"}
+                    className="flex flex-col w-20 hover:outline hover:rounded"
+                  >
+                    <img src={githubLogo} className="bg-transparent rounded-2xl p-2" />
+                  </Link>
+                  <Link
+                    to={"https://m0ndi.github.io/mondi-movie-app/"}
+                    className="flex flex-col w-20 hover:outline rounded"
+                  >
+                    <img src={liveDemoArrow} className="h-12 bg-transparent rounded-2xl p-2" />
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="tool-used tool-react">
-              <img src={reactLogo} />
+
+            <div className="carousel-item">
+              <div className="project movie-app text-center flex flex-col items-center justify-center w-full">
+                <div className="project-title mb-8 outline w-7/12 p-2 font-bold mt-4">Felix Roasting Company Clone</div>
+                <div className="project-tools-used w-7/12 flex justify-evenly">
+                  <div className="tool-used tool-javascript ">
+                    <img src={javascriptLogo} />
+                  </div>
+                  <div className="tool-used tool-react">
+                    <img src={reactLogo} />
+                  </div>
+                  <div className="tool-used tool-html">
+                    <img src={htmlLogo} />
+                  </div>
+                  <div className="tool-used tool-css">
+                    <img src={cssLogo} />
+                  </div>
+                  <div className="tool-used tool-react-router">
+                    <img src={reactRouterLogo} />
+                  </div>
+                  <div className="tool-used tool-axios">
+                    <img src={axiosLogo} />
+                  </div>
+                </div>
+                <img className="project-thumbnail w-7/12" src={felixapppreview} />
+                <div className="project-links flex justify-evenly p-4 w-full">
+                  <Link
+                    to={"https://github.com/M0NDI/felix-roasting-company-clone"}
+                    className="flex flex-col w-20 hover:outline hover:rounded"
+                  >
+                    <img src={githubLogo} className="bg-transparent rounded-2xl p-2" />
+                  </Link>
+                  <Link
+                    to={"https://m0ndi.github.io/felix-roasting-company-clone/"}
+                    className="flex flex-col w-20 hover:outline rounded"
+                  >
+                    <img src={liveDemoArrow} className="h-12 bg-transparent rounded-2xl p-2" />
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="tool-used tool-html">
-              <img src={htmlLogo} />
-            </div>
-            <div className="tool-used tool-css">
-              <img src={cssLogo} />
-            </div>
-            <div className="tool-used tool-tailwindcss">
-              <img src={tailwindcssLogo} />
-            </div>
-            <div className="tool-used tool-react-router">
-              <img src={reactRouterLogo} />
-            </div>
+
           </div>
-          <img className="project-thumbnail" src={felixapppreview} />
-          <div className="project-links flex justify-evenly p-4 w-full">
-            <Link
-              to={"https://github.com/M0NDI/felix-roasting-company-clone"}
-              className="flex flex-col w-20 hover:outline rounded"
-            >
-              <img src={githubLogo} className="bg-transparent rounded-2xl p-2" />
-            </Link>
-            <Link
-              to={"https://m0ndi.github.io/felix-roasting-company-clone/"}
-              className="flex flex-col w-20 hover:outline rounded"
-            >
-              <img src={liveDemoArrow} className="h-12 bg-transparent rounded-2xl p-2" />
-            </Link>
-          </div>
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
 
         {/*  */}

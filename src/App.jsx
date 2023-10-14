@@ -3,6 +3,7 @@ import Projects from "./Pages/Projects";
 import AboutMe from "./Pages/AboutMe";
 import Contact from "./Pages/Contact";
 import { Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "./App.css";
 

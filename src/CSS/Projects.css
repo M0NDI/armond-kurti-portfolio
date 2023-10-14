@@ -20,3 +20,14 @@
 .tool-axios {
     width: 10rem;
 }
+
+@media (max-width:375px) {
+    .tool-used img {
+        width: 4rem;
+        /* outline: 2px solid white; */
+    }
+    .project-title {
+        width: 15rem !important;
+        font-size: 20px !important;
+    }
+}
