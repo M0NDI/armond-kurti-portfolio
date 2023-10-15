@@ -1,7 +1,6 @@
 import "../CSS/Contact.css";
 import emailLogo from "../../public/assets/images/logos/email-logo.svg";
 import githubLogo from "../../public/assets/images/logos/github-logo.png";
-import phoneLogo from "../../public/assets/images/logos/phone-logo.svg";
 
 import { Link } from "react-router-dom";
 
