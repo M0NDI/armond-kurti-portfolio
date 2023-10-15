@@ -17,10 +17,6 @@
     height: 2rem;
 }
 
-.tool-axios {
-    
-}
-
 @media (max-width:375px) {
     .tool-used img {
         width: 3rem;
