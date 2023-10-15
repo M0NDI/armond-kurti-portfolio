@@ -16,7 +16,7 @@ const Contact = () => {
           <div className="flex justify-between w-full">
             <img src={emailLogo} className="w-16 ml-6" />
             <p className="flex items-center text-zinc-200 text-4xl">
-              <a href="mailto:armond.kurti@hotmail.com">armond.kurti@hotmail.com</a>
+              <a href="mailto:armondkurti21@gmail.com">armondkurti21@gmail.com</a>
             </p>
           </div>
         </div>
@@ -27,13 +27,6 @@ const Contact = () => {
             <p className="flex items-center text-zinc-200 text-4xl">
               <Link to="https://github.com/M0NDI">https://github.com/M0NDI</Link>
             </p>
-          </div>
-        </div>
-
-        <div className="contact-phone-number contact-item flex justify-evenly ">
-          <div className="flex justify-between w-full">
-            <img src={phoneLogo} className="h-16 ml-6" />
-            <p className="flex items-center text-zinc-200 text-4xl">+44 7916712239</p>
           </div>
         </div>
       </div>
