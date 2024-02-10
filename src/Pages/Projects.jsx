@@ -3,8 +3,6 @@ import "../CSS/Projects.css";
 
 import githubLogo from "../../public/assets/images/logos/github-logo.png";
 import liveDemoArrow from "../../public/assets/images/live-demo-arrow.svg";
-import movieAppPreview from "../../public/assets/images/movieapppreview.gif";
-import felixapppreview from "../../public/assets/images/felixapppreview.gif";
 import javascriptLogo from "../../public/assets/images/logos/javascript-logo.png";
 import reactLogo from "../../public/assets/images/logos/react-logo.png";
 import htmlLogo from "../../public/assets/images/logos/html-logo.png";
@@ -13,13 +11,16 @@ import tailwindcssLogo from "../../public/assets/images/logos/tailwindcss-logo.w
 import reactRouterLogo from "../../public/assets/images/logos/react-router-logo.png";
 import axiosLogo from "../../public/assets/images/logos/axios-logo.svg";
 
+// app gifs
+import movieAppPreview from "../../public/assets/images/movieapppreview.gif";
+import felixapppreview from "../../public/assets/images/felixapppreview.gif";
+
 const Projects = () => {
   return (
     <div id="projects-main-container" className="text-2xl">
       <div className="projects-inner flex flex-col text-zinc-100">
-        {/*  */}
 
-        <div id="carouselExample" className="carousel slide w-11/12 h-11/12 mt-12">
+        <div id="carouselExample" className="carousel slide w-11/12">
           <div className="carousel-inner">
             <div className="carousel-item active">
               <div className="project movie-app text-center flex flex-col items-center justify-center w-full">
