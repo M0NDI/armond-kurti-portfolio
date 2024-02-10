@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div
       id="contact-me-main-container"
-      className="text-2xl h-screen h-screen w-screen flex items-center justify-center"
+      className="text-2xl h-3/4 flex items-center justify-center"
     >
       <div className="contact-items flex flex-col justify-center items-center w-8/12">
         <div className="contact-email contact-item flex justify-evenly">

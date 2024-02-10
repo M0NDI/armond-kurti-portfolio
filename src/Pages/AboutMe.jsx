@@ -21,7 +21,7 @@ const AboutMe = () => {
         >
           Hi, I'm Armond.
         </h1>
-        <div className="more-about-me flex justify-center items-center flex-col text-zinc-100 m-6 cursor-pointer">
+        <div className="more-about-me flex justify-center items-center flex-col text-zinc-100 cursor-pointer m-24">
           <p onClick={handleAboutMeClicked} className="text-3xl leading-loose">
             {isAboutMeClicked ? <AboutMeDescription /> : "MORE ABOUT ME"}
           </p>

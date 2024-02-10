@@ -16,6 +16,10 @@
     height: 2rem;
 }
 
+.carousel-control:active {
+    transform: scale(0.8);
+}
+
 @media (max-width:375px) {
     .tool-used img {
         width: 3rem;

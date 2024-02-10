@@ -5,11 +5,9 @@ import Contact from "./Pages/Contact";
 import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import "./App.css";
-
 function App() {
   return (
-    <div id="app-wrapper" className="app">
+    <div id="app-wrapper" className="app h-screen">
       <Navbar />
       <Routes>
         <Route
