@@ -1,40 +1,44 @@
 .projects-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-tools-used {
-    height: 4rem;
+  height: 4rem;
 }
 
 .tool-used {
-    height: 3.5rem;
+  height: 3.5rem;
 }
 
 .tool-used img {
-    height: 2rem;
+  height: 2rem;
+}
+
+.tool-used p {
+    font-weight: 500;
 }
 
 .carousel-control:active {
-    transform: scale(0.8);
+  transform: scale(0.8);
 }
 
-@media (max-width:375px) {
-    .tool-used img {
-        width: 3rem;
-        height: auto;
-    }
-    .tool-used {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .project-title {
-        width: 10rem !important;
-        font-size: 15px !important;
-    }
-    .project-thumbnail {
-        width: 10rem !important;
-    }
+@media (max-width: 375px) {
+  .tool-used img {
+    width: 3rem;
+    height: auto;
+  }
+  .tool-used {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .project-title {
+    width: 10rem !important;
+    font-size: 15px !important;
+  }
+  .project-thumbnail {
+    width: 10rem !important;
+  }
 }

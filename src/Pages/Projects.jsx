@@ -12,7 +12,7 @@ import reduxLogo from "../../public/assets/images/logos/redux-logo.svg";
 import axiosLogo from "../../public/assets/images/logos/axios-logo.svg";
 import nodejsLogo from "../../public/assets/images/logos/nodejs-logo.png";
 import expressLogo from "../../public/assets/images/logos/express-logo.png";
-import mongodbLogo from "../../public/assets/images/logos/monodb-logo.jpg";
+import mongodbLogo from "../../public/assets/images/logos/monodb-logo.png";
 import materialuiLogo from "../../public/assets/images/logos/materialui-logo.svg";
 import bootstrapLogo from "../../public/assets/images/logos/bootstrap-logo.svg";
 
@@ -25,9 +25,7 @@ const Projects = () => {
   return (
     <div id="projects-main-container" className="text-2xl">
       <div className="projects-inner flex flex-col text-zinc-100">
-        {/*  */}
-
-        <div id="carouselExample" className="carousel slide w-11/12 h-11/12 mt-12">
+        <section id="carouselExample" className="carousel slide w-11/12 h-11/12 mt-12">
           <div className="carousel-inner">
             <div className="carousel-item">
               <div className="project movie-app text-center flex flex-col items-center justify-center w-full">
@@ -35,7 +33,6 @@ const Projects = () => {
                   Mondi Movie App
                 </div>
                 <div className="project-tools-used w-7/12 flex justify-evenly flex-wrap h-auto">
-                  {" "}
                   <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={javascriptLogo} />
                     <p className="text-lg">Javascript</p>
@@ -81,7 +78,6 @@ const Projects = () => {
                   Mondi Photo Gallery
                 </div>
                 <div className="project-tools-used w-7/12 flex justify-evenly flex-wrap h-auto">
-                  {" "}
                   <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={javascriptLogo} />
                     <p className="text-lg">Javascript</p>
@@ -151,7 +147,6 @@ const Projects = () => {
                   Felix Roasting Company Clone
                 </div>
                 <div className="project-tools-used w-7/12 flex justify-evenly flex-wrap h-auto">
-                  {" "}
                   <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={javascriptLogo} />
                     <p className="text-lg">Javascript</p>
@@ -191,6 +186,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
+
           <button
             className="carousel-control carousel-control-prev w-12 h-12 m-auto"
             type="button"
@@ -209,9 +205,7 @@ const Projects = () => {
             <span className="carousel-control carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
           </button>
-        </div>
-
-        {/*  */}
+        </section>
       </div>
     </div>
   );
