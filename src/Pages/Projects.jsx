@@ -8,8 +8,13 @@ import reactLogo from "../../public/assets/images/logos/react-logo.png";
 import htmlLogo from "../../public/assets/images/logos/html-logo.png";
 import cssLogo from "../../public/assets/images/logos/css-logo.png";
 import tailwindcssLogo from "../../public/assets/images/logos/tailwindcss-logo.webp";
-import reactRouterLogo from "../../public/assets/images/logos/react-router-logo.png";
+import reduxLogo from "../../public/assets/images/logos/redux-logo.svg";
 import axiosLogo from "../../public/assets/images/logos/axios-logo.svg";
+import nodejsLogo from "../../public/assets/images/logos/nodejs-logo.png";
+import expressLogo from "../../public/assets/images/logos/express-logo.png";
+import mongodbLogo from "../../public/assets/images/logos/monodb-logo.jpg";
+import materialuiLogo from "../../public/assets/images/logos/materialui-logo.svg";
+import bootstrapLogo from "../../public/assets/images/logos/bootstrap-logo.svg";
 
 // app gifs
 import movieAppPreview from "../../public/assets/images/movie-app-screen.png";
@@ -29,24 +34,27 @@ const Projects = () => {
                 <div className="project-title mb-8 outline w-9/12 p-2 font-bold mt-4">
                   Mondi Movie App
                 </div>
-                <div className="project-tools-used w-7/12 flex justify-evenly">
-                  <div className="tool-used tool-javascript ">
+                <div className="project-tools-used w-7/12 flex justify-evenly flex-wrap h-auto">
+                  {" "}
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={javascriptLogo} />
+                    <p className="text-lg">Javascript</p>
                   </div>
-                  <div className="tool-used tool-react">
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={reactLogo} />
+                    <p className="text-lg">React</p>
                   </div>
-                  <div className="tool-used tool-html">
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={htmlLogo} />
+                    <p className="text-lg">HTML</p>
                   </div>
-                  <div className="tool-used tool-css">
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={cssLogo} />
+                    <p className="text-lg">CSS</p>
                   </div>
-                  <div className="tool-used tool-react-router">
-                    <img src={reactRouterLogo} />
-                  </div>
-                  <div className="tool-used tool-axios">
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={axiosLogo} />
+                    <p className="text-lg">Axios</p>
                   </div>
                 </div>
                 <img className="project-thumbnail w-9/12" src={movieAppPreview} />
@@ -72,24 +80,51 @@ const Projects = () => {
                 <div className="project-title mb-8 outline w-9/12 p-2 font-bold mt-4">
                   Mondi Photo Gallery
                 </div>
-                <div className="project-tools-used w-7/12 flex justify-evenly">
-                  <div className="tool-used tool-javascript ">
+                <div className="project-tools-used w-7/12 flex justify-evenly flex-wrap h-auto">
+                  {" "}
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={javascriptLogo} />
+                    <p className="text-lg">Javascript</p>
                   </div>
-                  <div className="tool-used tool-react">
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={reactLogo} />
+                    <p className="text-lg">React</p>
                   </div>
-                  <div className="tool-used tool-html">
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
+                    <img src={nodejsLogo} />
+                    <p className="text-lg">NodeJS</p>
+                  </div>
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
+                    <img src={expressLogo} />
+                    <p className="text-lg">ExpressJS</p>
+                  </div>
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
+                    <img src={mongodbLogo} />
+                    <p className="text-lg">MongoDB</p>
+                  </div>
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
+                    <img src={reduxLogo} />
+                    <p className="text-lg">Redux</p>
+                  </div>
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={htmlLogo} />
+                    <p className="text-lg">HTML</p>
                   </div>
-                  <div className="tool-used tool-css">
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={cssLogo} />
+                    <p className="text-lg">CSS</p>
                   </div>
-                  <div className="tool-used tool-tailwindcss">
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
+                    <img src={materialuiLogo} />
+                    <p className="text-lg">MaterialUI</p>
+                  </div>
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
+                    <img src={bootstrapLogo} />
+                    <p className="text-lg">Bootstrap</p>
+                  </div>
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={tailwindcssLogo} />
-                  </div>
-                  <div className="tool-used tool-react-router">
-                    <img src={reactRouterLogo} />
+                    <p className="text-lg">TailwindCSS</p>
                   </div>
                 </div>
                 <img className="project-thumbnail w-9/12" src={mondiPhotoGalleryPreview} />
@@ -115,24 +150,27 @@ const Projects = () => {
                 <div className="project-title mb-8 outline w-9/12 p-2 font-bold mt-4">
                   Felix Roasting Company Clone
                 </div>
-                <div className="project-tools-used w-7/12 flex justify-evenly">
-                  <div className="tool-used tool-javascript ">
+                <div className="project-tools-used w-7/12 flex justify-evenly flex-wrap h-auto">
+                  {" "}
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={javascriptLogo} />
+                    <p className="text-lg">Javascript</p>
                   </div>
-                  <div className="tool-used tool-react">
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={reactLogo} />
+                    <p className="text-lg">React</p>
                   </div>
-                  <div className="tool-used tool-html">
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={htmlLogo} />
+                    <p className="text-lg">HTML</p>
                   </div>
-                  <div className="tool-used tool-css">
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={cssLogo} />
+                    <p className="text-lg">CSS</p>
                   </div>
-                  <div className="tool-used tool-tailwindcss">
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={tailwindcssLogo} />
-                  </div>
-                  <div className="tool-used tool-react-router">
-                    <img src={reactRouterLogo} />
+                    <p className="text-lg">TailwindCSS</p>
                   </div>
                 </div>
                 <img className="project-thumbnail w-9/12" src={felixAppPreview} />
