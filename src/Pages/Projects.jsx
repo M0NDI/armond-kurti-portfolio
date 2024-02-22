@@ -59,12 +59,14 @@ const Projects = () => {
                   <Link
                     to={"https://github.com/M0NDI/mondi-movie-app"}
                     className="flex flex-col w-20 hover:outline hover:rounded"
+                    target="_blank"
                   >
                     <img src={githubLogo} className="bg-transparent rounded-2xl p-2" />
                   </Link>
                   <Link
                     to={"https://m0ndi.github.io/mondi-movie-app/"}
                     className="flex flex-col w-20 hover:outline rounded"
+                    target="_blank"
                   >
                     <img src={liveDemoArrow} className="h-12 bg-transparent rounded-2xl p-2" />
                   </Link>
@@ -128,12 +130,14 @@ const Projects = () => {
                   <Link
                     to={"https://github.com/M0NDI/fullstack-image-search-app"}
                     className="flex flex-col w-20 hover:outline hover:rounded"
+                    target="_blank"
                   >
                     <img src={githubLogo} className="bg-transparent rounded-2xl p-2" />
                   </Link>
                   <Link
                     to={"https://mondi-photo-gallery.onrender.com"}
                     className="flex flex-col w-20 hover:outline rounded"
+                    target="_blank"
                   >
                     <img src={liveDemoArrow} className="h-12 bg-transparent rounded-2xl p-2" />
                   </Link>
@@ -173,12 +177,14 @@ const Projects = () => {
                   <Link
                     to={"https://github.com/M0NDI/felix-roasting-company-clone"}
                     className="flex flex-col w-20 hover:outline hover:rounded"
+                    target="_blank"
                   >
                     <img src={githubLogo} className="bg-transparent rounded-2xl p-2" />
                   </Link>
                   <Link
                     to={"https://m0ndi.github.io/felix-roasting-company-clone/"}
                     className="flex flex-col w-20 hover:outline rounded"
+                    target="_blank"
                   >
                     <img src={liveDemoArrow} className="h-12 bg-transparent rounded-2xl p-2" />
                   </Link>
