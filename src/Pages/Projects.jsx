@@ -28,7 +28,7 @@ const Projects = () => {
         <section id="carouselExample" className="carousel slide w-11/12 h-11/12 mt-12">
           <div className="carousel-inner">
             <div className="carousel-item">
-              <div className="project movie-app text-center flex flex-col items-center justify-center w-full">
+              <div className="project photo-gallery-app text-center flex flex-col items-center justify-center w-full">
                 <div className="project-title mb-8 outline w-9/12 p-2 font-bold mt-4">
                   Mondi Movie App
                 </div>
@@ -123,6 +123,10 @@ const Projects = () => {
                   <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
                     <img src={tailwindcssLogo} />
                     <p className="text-lg">TailwindCSS</p>
+                  </div>
+                  <div className="tool-used tool-javascript flex flex-col items-center justify-center m-1">
+                    <img src={axiosLogo} />
+                    <p className="text-lg">Axios</p>
                   </div>
                 </div>
                 <img className="project-thumbnail w-9/12" src={mondiPhotoGalleryPreview} />
