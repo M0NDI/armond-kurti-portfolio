@@ -2,12 +2,11 @@
 
 .navbar-container {
   font-family: "Raleway", sans-serif;
-/*   border-bottom: 1px solid white;
- */}
+}
 
 .nav-links-container li a {
-  --s: 0.1em; /* the thickness of the line */
-  --c: rgba(0, 0, 0, 0.644); /* the color */
+  --s: 0.1em; 
+  --c: rgb(214, 187, 65);
 
   color: #0000;
   padding-bottom: var(--s);

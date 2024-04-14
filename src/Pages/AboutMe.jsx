@@ -13,7 +13,7 @@ const AboutMe = () => {
   };
 
   return (
-    <div id="about-me-main-container" className="text-2xl">
+    <div className="about-me-main text-2xl">
       <div className="my-name-one flex justify-center items-center flex-col h-screen">
         <h1
           id="hi-im-armond"
@@ -27,11 +27,12 @@ const AboutMe = () => {
           </p>
           <img
             src={!isAboutMeClicked ? downArrow : upArrow}
+            style={isAboutMeClicked ? { backgroundColor: "rgb(214, 187, 65)" } : { backgroundColor: "rgb(0, 0, 0)" }}
             className="about-me-arrows relative mt-4 z-50"
             alt="Arrow"
             onClick={handleAboutMeClicked}
           />
-        </div>
+        </div>{/*  */}
       </div>
     </div>
   );

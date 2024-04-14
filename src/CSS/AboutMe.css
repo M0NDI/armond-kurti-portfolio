@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 
 body {
-	background: linear-gradient(45deg, #ff8800, #ff3c00, #7fa1d5 , #208f9e, #0f976e, #c4d814); 
+	background: linear-gradient(45deg, rgb(0, 13, 255), #0d00ff, #7fa1d5 , #208f9e, #0f976e, #c4d814); 
 	background-size: 500% 500%;
 	animation: gradient 15s ease-in-out infinite;
-	height: 100vh;
 }
 
 .my-name-one h1 {
