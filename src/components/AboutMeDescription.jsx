@@ -11,7 +11,7 @@ const AboutMeDescription = () => {
       <br />
       <br />
       My most recent application was a photo gallery app similar to Unsplash where users can search
-      for, like, unlike and dowload photos in varios resolutions. It was built with JavaScript,
+      for, like, unlike and dowload photos in various resolutions. It was built with JavaScript,
       React, NodeJS, Express and MongoDB as well as other things such as TailwindCSS and Redux
       toolkit.
       <br />
