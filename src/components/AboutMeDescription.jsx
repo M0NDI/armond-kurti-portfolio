@@ -7,7 +7,7 @@ const AboutMeDescription = () => {
       feel great to use. I love everything about programming and besides building projects, I also
       enjoy learning lower level concepts regarding computer science to get a better understanding
       of not just how I can get something done, but also why it works the way it does. I find it
-      fascinating how we got from binary to punch cards to the levels abstraction we have today!
+      fascinating how we got from binary to punch cards to the levels of abstraction we have today!
       <br />
       <br />
       My most recent application was a photo gallery app similar to Unsplash where users can search
