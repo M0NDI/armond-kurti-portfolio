@@ -78,7 +78,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="carousel-item">
+            <div className="carousel-item active">
               <div className="project photo-gallery-app text-center flex flex-col items-center justify-center w-full">
                 <div className="project-title mb-8 outline w-9/12 p-2 font-bold mt-4">
                   Projj - Simple Productivity (In Progress)
@@ -134,7 +134,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="carousel-item active">
+            <div className="carousel-item">
               <div className="project photo-gallery text-center flex flex-col items-center justify-center w-full">
                 <div className="project-title mb-8 outline w-9/12 p-2 font-bold mt-4">
                   Mondi Photo Gallery
