@@ -13,7 +13,12 @@ const AboutMeDescription = () => {
       My most recent application was a photo gallery app similar to Unsplash where users can search
       for, like, unlike and dowload photos in various resolutions. It was built with JavaScript,
       React, NodeJS, Express and MongoDB as well as other things such as TailwindCSS and Redux
-      toolkit.
+      toolkit. 
+      <br />
+      <br />
+      I am currently working on a productivity app that allows users to manage projects.
+      Users are able to create projects, manage tasks and set deadlines to manage their projects the
+      way they see fit!
       <br />
       <br />
       When I'm not coding, you'll probably catch me at the gym, lifting weights, or just unwinding
